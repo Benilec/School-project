@@ -5,33 +5,53 @@ body {
     min-width: 480px;
 }
 
-.fadeDiv {
-    
+a, a:hover {
+    text-decoration: none;
+    color: white;
 }
 
-.fade-h1 {
+/* index */
+.fadeDiv { 
     display: flex;
     justify-content: center;
+    align-items: center;
+    background: rgb(221, 221, 221);
+}
+
+.fadeDiv img {
+    max-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background: no-repeat;
+}
+
+.fade-h1 { 
+    width: 100%;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
     text-shadow: 0 2px 2px #0000004f;
     background-color: rgba(255, 255, 255, 0.541);
     font-weight: 200;
     font-size: 10vw;
 }
 
-.fadeImage {
-    max-width: 100vw;
-}
-
-nav {
+/* menu */
+nav { 
     display: grid;
     height: 60px;
     background-color: rgba(0, 0, 0, 0.705);
     grid-template-areas:
     "logo . list";
     padding: 7px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 
-.navUl {
+.navUl { 
     grid-area: list;
     display: flex;
     flex-direction: row;
@@ -42,7 +62,9 @@ nav {
     justify-content: space-evenly;
 }
 
-.logo {
+/* logo in menu */
+.logo { 
+    display: flex;
     grid-area: logo;
     margin: 0;
     font-family: Prata;
@@ -52,16 +74,22 @@ nav {
     color: white;
 }
 
+/* home page */
 .homeImage {
     max-width: 100%;
+    background-size: cover;
+    background: no-repeat;
 }
 
 .headerHome {
     background: url(./bilder/smile-2072908_1920.jpg);
+    background: no-repeat;
 }
 
+/* pricing page */
 .headerPrice .mainPrice {
     background: url(./bilder/photo-431119_1920.jpg);
+    background: no-repeat;
 }
 
 .headerPrice {
@@ -73,6 +101,7 @@ nav {
     height: 150px;
 }
 
+/* wedding page */
 .headerWedding {
     display: flex;
     flex-direction: column;
@@ -91,6 +120,7 @@ nav {
     list-style-type: none;
 }
 
+/* footer */
 footer {
     display: flex;
     display: grid;
