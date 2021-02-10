@@ -5,24 +5,16 @@ body {
     min-width: 480px;
 }
 
-a, a:hover {
-    text-decoration: none;
-    color: white;
-}
 
 /* index */
 .fadeDiv { 
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgb(221, 221, 221);
 }
 
 .fadeDiv img {
     max-height: 100vh;
-    background-size: cover;
-    background-position: center;
-    background: no-repeat;
 }
 
 .fade-h1 { 
@@ -51,6 +43,7 @@ nav {
     width: 100%;
 }
 
+
 .navUl { 
     grid-area: list;
     display: flex;
@@ -60,6 +53,16 @@ nav {
     list-style-type: none;
     color: white;
     justify-content: space-evenly;
+}
+
+nav a, nav li:hover {
+    text-decoration: none;
+    color: white;
+    transform: scale(1.2);
+}
+
+.active {
+    color: red;
 }
 
 /* logo in menu */
@@ -72,17 +75,19 @@ nav {
     font-weight: normal;
     font-size: 3vw;
     color: white;
+    padding-left: 3.5vh;
+}
+
+.logo a {
+    text-decoration: none;
+    color: white;
 }
 
 /* home page */
-.homeImage {
+.headerHome img{
+    background: url(./bilder/smile-2072908_1920.jpg);
     max-width: 100%;
     background-size: cover;
-    background: no-repeat;
-}
-
-.headerHome {
-    background: url(./bilder/smile-2072908_1920.jpg);
     background: no-repeat;
 }
 
