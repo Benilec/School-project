@@ -11,18 +11,18 @@ body {
     min-width: 480px;
 }
 
-
-/* index */
 .fadeDiv { 
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+/* index */
 .fadeDiv img {
     max-height: 100vh;
 }
 
+/* index */
 .fade-h1 { 
     width: 100%;
     display: flex;
@@ -38,7 +38,7 @@ body {
 /* menu */
 nav { 
     display: grid;
-    height: 60px;
+    height: 70px;
     background-color: rgba(0, 0, 0, 0.705);
     grid-template-areas:
     "logo . list";
@@ -94,31 +94,57 @@ nav a, nav li:hover {
     border-bottom: solid 1px black;
 }
 
+.mainHome {
+    height: 500px;
+}
+
 .mainHome h1 {
-    display: flex;
-    justify-content: center;
-    font-weight: 300;
+    font-size: 4rem;
 }
 
 .mainHome p {
+padding: 1rem 3.5rem;
+}
+
+.mainHome h1, .mainHome p {
     display: flex;
     justify-content: center;
     font-weight: 200;
 }
 
 /* pricing page */
-.headerPrice .mainPrice {
-    background: url(./bilder/photo-431119_1920.jpg);
-    background: no-repeat;
+.dropdown {
+    position: relative;
+    display: inline-block;
 }
 
-.headerPrice {
+.dropdownContent {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.705);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.24);
+    padding: 12px 16px;
+}
 
+.dropdown:hover .dropdownContent {
+    display: block;
+}
+
+.headerPrice img {
+    background: cover;
 }
 
 .mainPrice {
     background-color: rgba(0, 0, 0, 0.9);
     height: 150px;
+}
+
+#weddingBtn {
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;
+    font-weight: lighter;
+    padding: 1.5rem;
 }
 
 /* wedding page */
@@ -136,15 +162,49 @@ nav a, nav li:hover {
     font-weight: 300;
 }
 
+.mainWedding img {
+    width: 25rem;
+}
+
 .weddingList {
     list-style-type: none;
 }
+
+/* gallery page */
+#mainGallery :hover {
+    /* transform: scale(1.4); */
+}
+
+#mainGallery img{
+    object-fit: cover;
+    width: 25%;
+}
+
+/* contact page */
+#img-contact img{
+    max-width: 100%;
+}
+
+.mainContact {
+
+}
+
+.headerContact {
+
+}
+
+.headerContact h1 {
+    color: white;
+    font-weight: 300;
+    background-color: turquoise;
+}
+
 
 /* footer */
 footer {
     display: grid;
     font-weight: lighter;
-    grid-template-columns: 65% 20% 15%;
+    grid-template-columns: 75% 15% 10%;
     grid-template-areas: 
     "c-right phone adress";
 }
@@ -152,27 +212,36 @@ footer {
 .footerBlack {
     background-color: black;
     color: white;
+    height: 70px;
 }
 
+/* copyright */
 .c-right {
     grid-area: c-right;
     display: flex;
     align-items: center;
     padding-left: 2vh;
+    color: rgba(255, 255, 255, 0.74);
 }
 
+footer li {
+    list-style-type: none;    
+}
+
+/* phone and mail */
 #contactUl {
     grid-area: phone;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    list-style-type: none;
 }
 
+/* adress */
 .footerUl {
     grid-area: adress;
+}
+
+#contactUl, .footerUl {
     display: flex;
     flex-direction: column;
-    align-items: center;    
-    list-style-type: none;
+    justify-content: center;
+    font-size: .8rem;
+    color: rgba(255, 255, 255, 0.74);
 }
