@@ -48,7 +48,6 @@ nav {
     width: 100%;
 }
 
-
 .navUl { 
     grid-area: list;
     display: flex;
@@ -62,7 +61,7 @@ nav {
 
 nav a, nav li:hover {
     text-decoration: none;
-    color: white;
+    color: rgb(255, 255, 255);
     transform: scale(1.2);
 }
 
@@ -134,9 +133,17 @@ padding: 1rem 3.5rem;
     background: cover;
 }
 
-.mainPrice {
+.headerPrice h1 {
+    position: absolute;
+    margin: 8rem;
+    font-weight: 200;
+}
+
+.mainPrice, .mainPrice h1 {
     background-color: rgba(0, 0, 0, 0.9);
     height: 150px;
+    color: white;
+    font-weight: 200;
 }
 
 #weddingBtn {
@@ -163,7 +170,7 @@ padding: 1rem 3.5rem;
 }
 
 .mainWedding img {
-    width: 25rem;
+    width: 25%;
 }
 
 .weddingList {
@@ -171,8 +178,12 @@ padding: 1rem 3.5rem;
 }
 
 /* gallery page */
+#mainGallery {
+
+}
+
 #mainGallery :hover {
-    /* transform: scale(1.4); */
+     transform: scale(1.5);
 }
 
 #mainGallery img{
@@ -185,20 +196,19 @@ padding: 1rem 3.5rem;
     max-width: 100%;
 }
 
-.mainContact {
-
-}
-
 .headerContact {
 
 }
+
+.mainContact {
+    background-color: rgba(0, 0, 0, 0.705);
+}    
 
 .headerContact h1 {
     color: white;
     font-weight: 300;
     background-color: turquoise;
 }
-
 
 /* footer */
 footer {
