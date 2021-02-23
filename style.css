@@ -179,7 +179,8 @@ padding: 1rem 3.5rem;
     grid-template-columns: 50% 50%;
     grid-template-areas: 
     "left1 right"
-    "left2 right";
+    "left2 right"
+    "left3 right";
 }
 
 .mainWedding img {
@@ -199,14 +200,14 @@ padding: 1rem 3.5rem;
 }
 
 .weddingList {
-    grid-area: left1;
+    grid-area: left2;
     list-style-type: none;
     flex-direction: column;
     justify-self: center;
 }
 
 .weddingForm {
-    grid-area: left2;
+    grid-area: left3;
     justify-content: center;
     /* -webkit-appearance: ; */
 }
@@ -240,15 +241,15 @@ padding: 1rem 3.5rem;
     max-width: 100%;
 }
 
-.headerContact {
-
+.mainContact {
+background-color: rgba(0, 0, 0, 0.705);
 }
 
-.mainContact {
-    background-color: rgba(0, 0, 0, 0.705);
+.mainContact ul {
+    list-style-type: none;
 }    
 
-.headerContact h1 {
+.imgContact h1 {
     color: white;
     font-weight: 300;
     background-color: turquoise;
