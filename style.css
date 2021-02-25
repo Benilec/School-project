@@ -101,6 +101,7 @@ nav a, nav li:hover {
 /* home page */
 .mainHome img{
     max-width: 100%;
+    width: 1017px;
     border-bottom: solid 1px black;
 }
 
@@ -123,6 +124,22 @@ padding: 1rem 3.5rem;
 }
 
 /* pricing page */
+.pricePage {
+    background: url(./bilder/photo-431119_1920_copy.jpg);
+    width: 100%;
+}
+
+.pricePage :after {
+    position: absolute;
+    content: " ";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    /* background-color: rgba(0, 0, 0, 0.089); */
+}
+
 .dropdown {
     position: relative;
 }
@@ -146,8 +163,6 @@ padding: 1rem 3.5rem;
 }
 
 .mainPrice, .mainPrice h1 {
-    background-color: rgba(0, 0, 0, 0.9);
-    height: 150px;
     color: white;
     font-weight: 200;
 }
@@ -161,7 +176,17 @@ padding: 1rem 3.5rem;
 }
 
 /* wedding page */
-.headerWedding {
+.mainWedding {
+    background-color: black;
+    color: white;
+    font-weight: 300;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 
+    "col1 col2";
+}
+
+.quoteWedding {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -170,53 +195,68 @@ padding: 1rem 3.5rem;
     margin: 5.5rem 0 2rem 0;
 }
 
-.mainWedding {
-    background-color: black;
-    color: white;
-    font-weight: 300;
+.col1 {
+    grid-area: col1;
     display: flex;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-areas: 
-    "left1 right"
-    "left2 right"
-    "left3 right";
-}
-
-.mainWedding img {
-    grid-area: right;
-    width: 90%;
-    padding-top: 5rem;
-    justify-self: center;
-}
-
-.mainWedding p {
-    grid-area: right;
-}
-
-.mainWedding h2 {
-    grid-area: left1;
-    justify-self: center;
-}
-
-.weddingList {
-    grid-area: left2;
-    list-style-type: none;
-    flex-direction: column;
-    justify-self: center;
-}
-
-.weddingForm {
-    grid-area: left3;
     justify-content: center;
-    /* -webkit-appearance: ; */
+    align-items: center;
+    flex-direction: column;
+    margin-left: 2rem;
 }
 
-.weddingForm input {
+.col1 ul {
+    list-style-type: none;
+    padding: 2rem 0;
+}
+
+.col1 form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    }
+
+.col1 h2 {
+    margin: 5px;
+    text-align: left;
+    padding-top: 2rem;
+}
+
+.weddingForm input, select, textarea {
     outline: none;
     padding: 0.3rem;
-    margin: 0.5rem;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.col1 form button {
+    border-radius: 5px;
+    width: 100%;
+    padding: 5px;
+    margin:10px 0;
+}
+
+.weddingForm label { 
+    margin-top: .4rem;
+}
+
+
+.mainWedding img {
+    grid-area: col2;
+    width: 90%;
+    padding-top: 2rem;
+    justify-self: center;
+}
+
+.col2 span {
+    display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 25px;
+}
+
+.col2 span p {
+    padding: 3px;
 }
 
 /* gallery page */
@@ -237,17 +277,62 @@ padding: 1rem 3.5rem;
 }
 
 /* contact page */
-#img-contact img{
-    max-width: 100%;
+.contactPage {
+    background: url(./bilder/baby-1399332_1920_copy.jpg) no-repeat 0, 0;
+    width: 100%;
+}
+
+.contactPage :after {
+    position: absolute;
+    content: " ";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    /* background-color: rgba(0, 0, 0, 0.089); */
 }
 
 .mainContact {
-background-color: rgba(0, 0, 0, 0.705);
+    background-color: rgba(0, 0, 0, 0.705);
+    display: flex;
+    grid-template-rows: 20 60 20;
+    grid-template-areas: 
+    ". form .";
+}
+
+.mainContact div {
+    grid-area: form;
 }
 
 .mainContact ul {
     list-style-type: none;
-}    
+}
+
+.mainContact form {
+    justify-content: center;
+    flex-direction: column;
+    padding: 0.3rem;
+    border-radius: 5px;
+    width: 70%;
+    outline: none;
+}
+
+.mainContact form input, textarea {
+    margin-top: .4rem;
+}
+
+.mainContact form button {
+    border-radius: 5px;
+    width: 100%;
+    padding: 5px;
+    margin:10px 0;
+}
+
+.mainContact p, ul {
+    color: white;
+    font-weight: 300;
+}
 
 .imgContact h1 {
     color: white;
@@ -268,7 +353,7 @@ footer {
 }
 
 /* copyright */
-.c-right {
+footer p {
     grid-area: c-right;
     display: flex;
     align-items: center;
@@ -290,7 +375,7 @@ footer li {
     grid-area: adress;
 }
 
-#contactUl, .footerUl {
+footer ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
