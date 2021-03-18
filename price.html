@@ -2,18 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Freya Photos</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <div class="pricePage">
+<body class="container bg-img priceImg">
+    <header class="header">
         <nav>
             <h1 class="logo"><a href="home.html">Freya Photos</a></h1>
             <ul class="navUl">
                 <li><a href="home.html">Home</a></li>
                 <div class="dropdown">
-                    <li><a href="price.html" class="active">Pricing</a></li>
+                    <li><a href="price.html"  class="active">Pricing</a></li>
                     <div class="dropdownContent">
                         <a href="wedding.html">Wedding</a>
                     </div>
@@ -22,32 +22,31 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-        <header class="headerPrice">
-            <h1>Pricing & Information</h1>
-        </header>
-        <div>
-            <main class="mainPrice">
-                <h1>We Offer:</h1>
-                <p>-Headshots</p>
-                <p>-In studio and outside</p>
-                <p>-Wedding Photography</p>
-                <p>-Babyphotos</p>
-                <p>-Freelancing</p>
-                <button><a href="wedding.html">Inquire for weddings</a></button>
-            </main>
+    </header>
+        <div class="content">
+            <div class="title">Pricing & information</div>
+            <div class="mainPrice">
+              <h1>About Freya</h1>
+              <h1>We Offer:</h1>
+              <p>-Headshots</p>
+              <p>-In studio and outside</p>
+              <p>-Wedding Photography</p>
+              <p>-Babyphotos</p>
+              <p>-Freelancing</p>
+              <button><a href="wedding.html" id="weddingBtn">Inquire for weddings</a></button></main>
+            </div>
+            <footer class="footerBlack footer">
+                <p class="c-right">© 2021 Freya Photos</p>
+                <ul id="contactUl">
+                    <li>+46 746658409</li>
+                    <li>namn.företag@mail.com</li>
+                </ul>
+                <ul class="footerUl">
+                    <li>Adressgatan 11</li>
+                    <li>111 11 adress</li>
+                    <li>Stad, Land</li>
+                </ul>
+            </footer>
         </div>
-    </div>
-    <footer>
-        <p>© 2021 Freya Photos</p>
-        <ul id="contactUl">
-            <li>+46 746658409</li>
-            <li>namn.företag@mail.com</li>
-        </ul>
-        <ul class="footerUl">
-            <li>Adressgatan 11</li>
-            <li>111 11 adress</li>
-            <li>Stad, Land</li>
-        </ul>
-    </footer>
-</body>
+        </body>
 </html>
